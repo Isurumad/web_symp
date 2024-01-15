@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+ <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" style="background-color: #6e8db0 !important;">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#">
+			<img src="/img/university-of-peradeniya-logo.png" class="nav-logo img-fluid">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Speakers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">GuidLines</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Organizing Committee</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+ </nav>
+
+
+<!-- Background with countdown -->
+<div class="masthead" style="background-image: url('img/microplastic-in-see.png');">
+	<!-- get text to middle of the background -->
+	<div class="color-overlay d-flex justify-content-center align-items-center">
+		<h1 class="main-header">Symposium on Microplastics Pollution</h1>
+	</div> 
+	<div class="timer d-flex justify-content-center align-items-center">
+		<div>
+			<p id="days">00</p>
+			<span>Days</span>
+		</div>
+		<div>
+			<p id="hours">00</p>
+			<span>Hours</span>
+		</div>
+		<div>
+			<p id="minutes">00</p>
+			<span>Minutes</span>
+		</div>
+		<div>
+			<p id="seconds">00</p>
+			<span>Seconds</span>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!--- Footer -->
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center"> 
+			<div class="col-md-4">
+				<img src="img/w3newbie.png">
+				<hr class="light">
+				<p>555-555-5555</p>
+				<p>email@emai.com</p>
+				<p>100 Street Name</p>
+				<p>City, State, 00000</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Our Hours</h5>
+				<hr class="light">
+				<p>Monday: 9am - 5pm</p>
+				<p>Saturday: 10am - 4pm</p>
+				<p>Sunday: closed</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Service Area</h5>
+				<hr class="light">
+				<p>City, State, 00000</p>
+				<p>City, State, 00000</p>
+				<p>City, State, 00000</p>
+				<p>City, State, 00000</p>
+			</div>
+			<div class="col-12">
+				<hr class="light-100">
+				<h5>&copy; www.pgis.lk</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script>
+	window.onload = function(){
+		var countdownDate = new Date("Apr 05,2024 00:00:00").getTime();
+		console.log(countdownDate);
+		var x = setInterval(function(){
+			var now = new Date().getTime();
+			var distance = countdownDate - now;
+
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			document.getElementById("days").innerHTML = days;
+			document.getElementById("hours").innerHTML = hours;
+			document.getElementById("minutes").innerHTML = minutes;
+			document.getElementById("seconds").innerHTML = seconds;
+
+		},1000);
+
+		
+	};
+</script>
+
+
+</body>
+</html>
+
