@@ -11,10 +11,14 @@
 html, body{
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
+  margin: 0;
+  
+
+  
   font-family: 'Poppins', sans-serif;
   color: #222;
 }
+
 
 /* ************style for navigation start *************/
 .nav-logo{

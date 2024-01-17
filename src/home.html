@@ -2,327 +2,330 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- bootstrap  -->
-    <link rel="stylesheet" href="../scss/main.css">
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+	<!-- bootstrap  -->
+	<link rel="stylesheet" href="../scss/main.css">
+	<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
-    <!-- fonts -->
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<!-- fonts -->
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
-    <!-- css -->
-    <link href="style.css" rel="stylesheet">
+	<!-- css -->
+	<link href="style.css" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 
-    <title>SYMP-2024</title>
+	<title>SYMP-2024</title>
 </head>
 
 <body>
 
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" style="background-color: #4d637c !important;">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="#">
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" style="background-color: #4d637c !important;">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
 				<img src="/img/university-of-peradeniya-logo.png" class="nav-logo img-fluid">
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Speakers</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">GuidLines</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Organizing Committee</a>
-				</li>
-			</ul>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Speakers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">GuidLines</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Organizing Committee</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
 
-</nav>
+	</nav>
 
 	<!-- Background with countdown -->
-<div class="background-with-image" style="background-image: url('../img/microplastic-in-see.png');">
-	
-	<div class="title d-flex justify-content-center align-items-center">
-		<h1 class="main-header">SYMP 2024</h1>
-	</div> 
+	<div class="background-with-image" style="background-image: url('../img/microplastic-in-see.png');">
 
-	<div class="full-name d-flex justify-content-center align-items-center text-center ">
-		<p class="">Symposium on Microplastics Pollution 2024</p>
-	</div>
-
-	<div class="timer-disc d-flex justify-content-center align-items-center">
-		<p class="">Abstract Submission Deadline</p>
-	</div>
-
-	<div class="timer d-flex justify-content-center align-items-center bor">
-		<div class="text-center bor">
-			<p id="days">00</p>
-			<span class="timeVariable bor1">Days</span>
+		<div class="title d-flex justify-content-center align-items-center">
+			<h1 class="main-header">SYMP 2024</h1>
 		</div>
-		<div class="text-center bor">
-			<p id="hours">00</p>
-			<span class="timeVariable bor1">Hours</span>
+
+		<div class="full-name d-flex justify-content-center align-items-center text-center ">
+			<p class="">Symposium on Microplastics Pollution 2024</p>
 		</div>
-		<div class="text-center bor">
-			<p id="minutes">00</p>
-			<span class="timeVariable bor1">Minutes</span>
+
+		<div class="timer-disc d-flex justify-content-center align-items-center">
+			<p class="">Abstract Submission Deadline</p>
 		</div>
-		<div class="text-center bor">
-			<p id="seconds">00</p>
-			<span class="timeVariable bor1">Seconds</span>
-		</div>
-	</div>
-</div>
 
-
-
-
-
-<!-- Theme gallery starts -->
-
-
-<div class="row justify-content-center" style="background-color: #4d637c !important;" >
-
-	<!-- Heading -->
-	<div class="col-12 text-center text-dark p-3 mt-5">
-		<h1>Themes</h1>
-	</div>
-
-
-
-	<!-- Placeholder-->
-	<div class="col-xl-1 col-lg-4 col-md-6 mb-4 d-sm-none d-xl-flex align-items-stretch"></div>
-
-	<!-- Gallery item -->
-	<div class="col-xl-2 col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
-		<div class="card bg-white rounded shadow-sm"><img src="../img/content/Environment.jpg" alt=""
-				class="img-fluid card-img-top">
-			<div class="p-4">
-				<h6>
-					<div class="text-dark">Microplastics & Environment</div>
-				</h6>
-
+		<div class="timer d-flex justify-content-center align-items-center bor">
+			<div class="text-center bor">
+				<p id="days">00</p>
+				<span class="timeVariable bor1">Days</span>
+			</div>
+			<div class="text-center bor">
+				<p id="hours">00</p>
+				<span class="timeVariable bor1">Hours</span>
+			</div>
+			<div class="text-center bor">
+				<p id="minutes">00</p>
+				<span class="timeVariable bor1">Minutes</span>
+			</div>
+			<div class="text-center bor">
+				<p id="seconds">00</p>
+				<span class="timeVariable bor1">Seconds</span>
 			</div>
 		</div>
 	</div>
-	<!-- End -->
-
-	<!-- Gallery item -->
-	<div class="col-xl-2 col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
-		<div class="card bg-white rounded shadow-sm"><img src="../img/content/Monitoring.jpg" alt=""
-				class="img-fluid card-img-top">
-			<div class="p-4">
-				<h6>
-					<div class="text-dark">Detection & Monitoring of Microplastics</div>
-				</h6>
-
-
-			</div>
-		</div>
-	</div>
-	<!-- End -->
-
-	<!-- Gallery item -->
-	<div class="col-xl-2 col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
-		<div class=" card bg-white rounded shadow-sm"><img src="../img/content/Health.jpg" alt=""
-				class="img-fluid card-img-top">
-			<div class="p-4">
-				<h6>
-					<div class="text-dark">Microplastics & Health</div>
-				</h6>
-
-			</div>
-		</div>
-	</div>
-	<!-- End -->
-
-	<!-- Gallery item -->
-	<div class="col-xl-2 col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
-		<div class="card bg-white rounded shadow-sm"><img src="../img/content/Industry.jpg" alt=""
-				class="img-fluid card-img-top">
-			<div class="p-4">
-				<h6>
-					<div class="text-dark">Microplastics & Industry</div>
-				</h6>
-
-
-			</div>
-		</div>
-	</div>
-	<!-- End -->
-
-
-	<!-- Gallery item -->
-	<div class="col-xl-2 col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
-		<div class="card bg-white rounded shadow-sm"><img src="../img/content/Innovation.jpg" alt=""
-				class="img-fluid card-img-top">
-			<div class="p-4">
-				<h6>
-					<div class="text-dark">Remedial Measures, Policies & Technological Innovations</div>
-					</h5>
-
-
-			</div>
-		</div>
-	</div>
-	<!-- End -->
-
-	<!-- Placeholder-->
-	<div class="col-xl-1 col-lg-4 col-md-6 mb-4 d-sm-none d-xl-flex align-items-stretch"></div>
-
-</div>
-
-<!-- </div> -->
-<!-- Theme gallery End -->
-
-<!-- Important dates Gallery starts-->
-
-
-<div class="container-fluid"  style="background-color: #4d637c !important;">
-	<div class="px-lg-1">
 
 
 
 
 
-		<div class="row justify-content-center">
+	<!-- Theme gallery starts -->
+
+	<div class="container-fluid">
+
+
+		<div class="row justify-content-center" style="background-color: #4d637c !important;">
 
 			<!-- Heading -->
-			<div class="col-12 text-center text-dark p-3 mt-3">
-				<h1>Important Dates</h1>
+			<div class="col-12 text-center text-dark p-3 mt-5">
+				<h1>Themes</h1>
 			</div>
-			<!-- Gallery item -->
-			<div class=" col-lg-4 col-md-6 mb-4 d-flex align-items-stretch text-center ">
-				<div class="card bg-white rounded shadow-sm w-100">
-					<div class="card-header">Abstract Submission Deadline</div>
-					<div class="card-content">
-						<div class="card-body ">
 
 
-							<h4>05<sup>th</sup> April 2024</h4>
-						</div>
-					</div>
 
-				</div>
-			</div>
+			<!-- Placeholder-->
+			<div class="col-xl-1 col-lg-4 col-md-6 mb-4 d-sm-none d-xl-flex align-items-stretch"></div>
 
 			<!-- Gallery item -->
-			<div class=" col-lg-4 col-md-6 mb-4 d-flex align-items-stretch text-center">
-				<div class="card bg-white rounded shadow-sm w-100">
-					<div class="card-header">Notification of Acceptance</div>
-					<div class="card-content">
-						<div class="card-body ">
+			<div class="col-xl-2 col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+				<div class="card bg-white rounded shadow-sm"><img src="../img/content/Environment.jpg" alt=""
+						class="img-fluid card-img-top">
+					<div class="p-4">
+						<h6>
+							<div class="text-dark">Microplastics & Environment</div>
+						</h6>
 
-
-							<h4>01<sup>th</sup> June 2024</h4>
-						</div>
 					</div>
-
 				</div>
 			</div>
+			<!-- End -->
+
 			<!-- Gallery item -->
-			<div class=" col-lg-4 col-md-6 mb-4 d-flex align-items-stretch text-center">
-				<div class="card bg-white rounded shadow-sm w-100">
-					<div class="card-header">Submission of Revised Abstracts</div>
-					<div class="card-content">
-						<div class="card-body ">
+			<div class="col-xl-2 col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+				<div class="card bg-white rounded shadow-sm"><img src="../img/content/Monitoring.jpg" alt=""
+						class="img-fluid card-img-top">
+					<div class="p-4">
+						<h6>
+							<div class="text-dark">Detection & Monitoring of Microplastics</div>
+						</h6>
 
 
-							<h4>30<sup>th</sup> June 2024</h4>
-						</div>
 					</div>
-
 				</div>
 			</div>
+			<!-- End -->
 
+			<!-- Gallery item -->
+			<div class="col-xl-2 col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+				<div class=" card bg-white rounded shadow-sm"><img src="../img/content/Health.jpg" alt=""
+						class="img-fluid card-img-top">
+					<div class="p-4">
+						<h6>
+							<div class="text-dark">Microplastics & Health</div>
+						</h6>
+
+					</div>
+				</div>
+			</div>
+			<!-- End -->
+
+			<!-- Gallery item -->
+			<div class="col-xl-2 col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+				<div class="card bg-white rounded shadow-sm"><img src="../img/content/Industry.jpg" alt=""
+						class="img-fluid card-img-top">
+					<div class="p-4">
+						<h6>
+							<div class="text-dark">Microplastics & Industry</div>
+						</h6>
+
+
+					</div>
+				</div>
+			</div>
+			<!-- End -->
+
+
+			<!-- Gallery item -->
+			<div class="col-xl-2 col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+				<div class="card bg-white rounded shadow-sm"><img src="../img/content/Innovation.jpg" alt=""
+						class="img-fluid card-img-top">
+					<div class="p-4">
+						<h6>
+							<div class="text-dark">Remedial Measures, Policies & Technological Innovations</div>
+							</h5>
+
+
+					</div>
+				</div>
+			</div>
+			<!-- End -->
+
+			<!-- Placeholder-->
+			<div class="col-xl-1 col-lg-4 col-md-6 mb-4 d-sm-none d-xl-flex align-items-stretch"></div>
 
 		</div>
 	</div>
-</div>
-
-<!-- Important dates Gallery ends-->
 
 
+	<!-- Theme gallery End -->
 
-  <!--- Footer -->
-<footer>
-	<div class="container-fluid padding ">
-		<div class="row text-center"> 
-			<div class="col-md-4">
-				<hr class="light mx-auto">
-				<h5>For More Details</h5>
-				<hr class="light mx-auto">
-				<p><a href="#" class="text-decoration-none">www.pgis.lk/symp</a></p>
-				<p>symp2024@gmail.com</p>
+	<!-- Important dates Gallery starts-->
 
-			</div>
-			<div class="col-md-4">
-				<hr class="light mx-auto">
-				<h5>Symposium Chairmen</h5>
-				<hr class="light mx-auto">
-				<p>Prof.Nadeeshani Nanayakkara</p>
-				<p>+94 81 239 3574</p>
 
-			</div>
-			<div class="col-md-4">
-				<hr class="light mx-auto">
-				<h5>Symposium Secretary</h5>
-				<hr class="light mx-auto">
-				<p>Dr.Nadeesha Koralagedara</p>
-				<p>+94 81 239 4285</p>
+	<div class="container-fluid" style="background-color: #4d637c !important;">
+		<div class="px-lg-1">
 
-			</div>
-			<div class="col-12">
-				<hr class="light-100">
-				<h5>&copy; www.pgis.lk</h5>
+
+
+
+
+			<div class="row justify-content-center">
+
+				<!-- Heading -->
+				<div class="col-12 text-center text-dark p-3 mt-3">
+					<h1>Important Dates</h1>
+				</div>
+				<!-- Gallery item -->
+				<div class=" col-lg-4 col-md-6 mb-4 d-flex align-items-stretch text-center ">
+					<div class="card bg-white rounded shadow-sm w-100">
+						<div class="card-header">Abstract Submission Deadline</div>
+						<div class="card-content">
+							<div class="card-body ">
+
+
+								<h4>05<sup>th</sup> April 2024</h4>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Gallery item -->
+				<div class=" col-lg-4 col-md-6 mb-4 d-flex align-items-stretch text-center">
+					<div class="card bg-white rounded shadow-sm w-100">
+						<div class="card-header">Notification of Acceptance</div>
+						<div class="card-content">
+							<div class="card-body ">
+
+
+								<h4>01<sup>th</sup> June 2024</h4>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- Gallery item -->
+				<div class=" col-lg-4 col-md-6 mb-4 d-flex align-items-stretch text-center">
+					<div class="card bg-white rounded shadow-sm w-100">
+						<div class="card-header">Submission of Revised Abstracts</div>
+						<div class="card-content">
+							<div class="card-body ">
+
+
+								<h4>30<sup>th</sup> June 2024</h4>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
 			</div>
 		</div>
 	</div>
-</footer>
+
+	<!-- Important dates Gallery ends-->
 
 
-  <script>
-    window.onload = function () {
-      var countdownDate = new Date("Apr 05,2024 00:00:00").getTime();
-      console.log(countdownDate);
-      var x = setInterval(function () {
-        var now = new Date().getTime();
-        var distance = countdownDate - now;
-  
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-        document.getElementById("days").innerHTML = days;
-        document.getElementById("hours").innerHTML = hours;
-        document.getElementById("minutes").innerHTML = minutes;
-        document.getElementById("seconds").innerHTML = seconds;
-  
-      }, 1000);
-  
-      
-    };
-  </script>
-    
+
+	<!--- Footer -->
+	<footer>
+		<div class="container-fluid padding ">
+			<div class="row text-center">
+				<div class="col-md-4">
+					<hr class="light mx-auto">
+					<h5>For More Details</h5>
+					<hr class="light mx-auto">
+					<p><a href="#" class="text-decoration-none">www.pgis.lk/symp</a></p>
+					<p>symp2024@gmail.com</p>
+
+				</div>
+				<div class="col-md-4">
+					<hr class="light mx-auto">
+					<h5>Symposium Chairmen</h5>
+					<hr class="light mx-auto">
+					<p>Prof.Nadeeshani Nanayakkara</p>
+					<p>+94 81 239 3574</p>
+
+				</div>
+				<div class="col-md-4">
+					<hr class="light mx-auto">
+					<h5>Symposium Secretary</h5>
+					<hr class="light mx-auto">
+					<p>Dr.Nadeesha Koralagedara</p>
+					<p>+94 81 239 4285</p>
+
+				</div>
+				<div class="col-12">
+					<hr class="light-100">
+					<h5>&copy; www.pgis.lk</h5>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script>
+		window.onload = function () {
+			var countdownDate = new Date("Apr 05,2024 00:00:00").getTime();
+			console.log(countdownDate);
+			var x = setInterval(function () {
+				var now = new Date().getTime();
+				var distance = countdownDate - now;
+
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				document.getElementById("days").innerHTML = days;
+				document.getElementById("hours").innerHTML = hours;
+				document.getElementById("minutes").innerHTML = minutes;
+				document.getElementById("seconds").innerHTML = seconds;
+
+			}, 1000);
+
+
+		};
+	</script>
+
 </body>
 
 </html>
