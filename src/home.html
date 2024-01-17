@@ -1,222 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- bootstrap  -->
-    <link rel="stylesheet" href="../scss/main.css">
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+	<!-- bootstrap  -->
+	<link rel="stylesheet" href="../scss/main.css">
+	<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
-    <!-- fonts -->
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<!-- fonts -->
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
-    <!-- css -->
-    <link href="style.css" rel="stylesheet">
+	<!-- css -->
+	<link href="style.css" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 
-    <title>SYMP-2024</title>
+	<title>SYMP-2024</title>
 </head>
+
 <body>
 
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" style="background-color: #4d637c !important;">
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" style="background-color: #4d637c !important;">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="/img/university-of-peradeniya-logo.png" class="nav-logo img-fluid">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Speakers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">GuidLines</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Organizing Committee</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</nav>
+
+	<!-- Background with countdown -->
+	<div class="masthead" style="background-image: url('../img/microplastic-in-see.png');">
+		<!-- get text to middle of the background -->
+		<div class="color-overlay d-flex justify-content-center align-items-center">
+			<h1 class="main-header">SYMP 2024</h1>
+		</div>
+		<div class="timer d-flex justify-content-center align-items-center">
+			<div>
+				<p id="days">00</p>
+				<span>Days</span>
+			</div>
+			<div>
+				<p id="hours">00</p>
+				<span>Hours</span>
+			</div>
+			<div>
+				<p id="minutes">00</p>
+				<span>Minutes</span>
+			</div>
+			<div>
+				<p id="seconds">00</p>
+				<span>Seconds</span>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Theme gallery starts -->
 	<div class="container-fluid">
-		<a class="navbar-brand" href="#">
-			<img src="/img/university-of-peradeniya-logo.png" class="nav-logo img-fluid">
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Speakers</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">GuidLines</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Organizing Committee</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-
- </nav>
-
- <!-- Background with countdown -->
-<div class="masthead" style="background-image: url('../img/microplastic-in-see.png');">
-	<!-- get text to middle of the background -->
-	<div class="color-overlay d-flex justify-content-center align-items-center">
-		<h1 class="main-header">SYMP 2024</h1>
-	</div> 
-	<div class="timer d-flex justify-content-center align-items-center">
-		<div>
-			<p id="days">00</p>
-			<span>Days</span>
-		</div>
-		<div>
-			<p id="hours">00</p>
-			<span>Hours</span>
-		</div>
-		<div>
-			<p id="minutes">00</p>
-			<span>Minutes</span>
-		</div>
-		<div>
-			<p id="seconds">00</p>
-			<span>Seconds</span>
-		</div>
-	</div>
-</div>
-
-
-<div class="container-fluid">
-	<div class="px-lg-5">
-  
-	  
-  
-	  <div class="row">
-		<!-- Gallery item -->
-		<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-		  <div class="bg-white rounded shadow-sm"><img src="https://bootstrapious.com/i/snippets/sn-gallery/img-1.jpg" alt="" class="img-fluid card-img-top">
-			<div class="p-4">
-			  <h5> <a href="#" class="text-dark">Red paint cup</a></h5>
-			  <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-			  <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-				<p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
-				<div class="badge badge-danger px-3 rounded-pill font-weight-normal">New</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		<!-- End -->
-  
-		<!-- Gallery item -->
-		<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-		  <div class="bg-white rounded shadow-sm"><img src="https://bootstrapious.com/i/snippets/sn-gallery/img-2.jpg" alt="" class="img-fluid card-img-top">
-			<div class="p-4">
-			  <h5> <a href="#" class="text-dark">Blorange</a></h5>
-			  <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-			  <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-				<p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">PNG</span></p>
-				<div class="badge badge-primary px-3 rounded-pill font-weight-normal">Trend</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		<!-- End -->
-  
-		<!-- Gallery item -->
-		<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-		  <div class="bg-white rounded shadow-sm"><img src="https://bootstrapious.com/i/snippets/sn-gallery/img-3.jpg" alt="" class="img-fluid card-img-top">
-			<div class="p-4">
-			  <h5> <a href="#" class="text-dark">And She Realized</a></h5>
-			  <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-			  <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-				<p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
-				<div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white">Featured</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		<!-- End -->
-  
-		<!-- Gallery item -->
-		<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-		  <div class="bg-white rounded shadow-sm"><img src="https://bootstrapious.com/i/snippets/sn-gallery/img-4.jpg" alt="" class="img-fluid card-img-top">
-			<div class="p-4">
-			  <h5> <a href="#" class="text-dark">DOSE Juice</a></h5>
-			  <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-			  <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-				<p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
-				<div class="badge badge-success px-3 rounded-pill font-weight-normal">Hot</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		<!-- End -->
-  
-
-  
-	  </div>
-	  <div class="py-5 text-right"><a href="#" class="btn btn-dark px-5 py-3 text-uppercase">Show me more</a></div>
-	</div>
-  </div>
+		<div class="px-lg-1">
 
 
 
-  <!--- Footer -->
-<footer>
-	<div class="container-fluid padding ">
-		<div class="row text-center"> 
-			<div class="col-md-4">
-				<hr class="light mx-auto">
-				<h5>For More Details</h5>
-				<hr class="light mx-auto">
-				<p><a href="#">www.pgis.lk/symp</a></p>
-				<p>symp2024@gmail.com</p>
+
+
+			<div class="row justify-content-center">
+
+				<!-- Heading -->
+				<div class="col-12 text-center text-dark p-3 mt-5">
+					<h1>Themes</h1>
+				</div>
+
+
+
+				<!-- Placeholder-->
+				<div class="col-xl-1 col-lg-4 col-md-6 mb-4 d-sm-none d-xl-flex align-items-stretch"></div>
+
+				<!-- Gallery item -->
+				<div class="col-xl-2 col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+					<div class="card bg-white rounded shadow-sm"><img src="../img/content/Environment.jpg" alt=""
+							class="img-fluid card-img-top">
+						<div class="p-4">
+							<h6>
+								<div class="text-dark">Microplastics & Environment</div>
+							</h6>
+
+						</div>
+					</div>
+				</div>
+				<!-- End -->
+
+				<!-- Gallery item -->
+				<div class="col-xl-2 col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+					<div class="card bg-white rounded shadow-sm"><img src="../img/content/Monitoring.jpg" alt=""
+							class="img-fluid card-img-top">
+						<div class="p-4">
+							<h6>
+								<div class="text-dark">Detection & Monitoring of Microplastics</div>
+							</h6>
+
+
+						</div>
+					</div>
+				</div>
+				<!-- End -->
+
+				<!-- Gallery item -->
+				<div class="col-xl-2 col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+					<div class=" card bg-white rounded shadow-sm"><img src="../img/content/Health.jpg" alt=""
+							class="img-fluid card-img-top">
+						<div class="p-4">
+							<h6>
+								<div class="text-dark">Microplastics & Health</div>
+							</h6>
+
+						</div>
+					</div>
+				</div>
+				<!-- End -->
+
+				<!-- Gallery item -->
+				<div class="col-xl-2 col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+					<div class="card bg-white rounded shadow-sm"><img src="../img/content/Industry.jpg" alt=""
+							class="img-fluid card-img-top">
+						<div class="p-4">
+							<h6>
+								<div class="text-dark">Microplastics & Industry</div>
+							</h6>
+
+
+						</div>
+					</div>
+				</div>
+				<!-- End -->
+
+
+				<!-- Gallery item -->
+				<div class="col-xl-2 col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+					<div class="card bg-white rounded shadow-sm"><img src="../img/content/Innovation.jpg" alt=""
+							class="img-fluid card-img-top">
+						<div class="p-4">
+							<h6>
+								<div class="text-dark">Remedial Measures, Policies & Technological Innovations</div>
+								</h5>
+
+
+						</div>
+					</div>
+				</div>
+				<!-- End -->
+
+				<!-- Placeholder-->
+				<div class="col-xl-1 col-lg-4 col-md-6 mb-4 d-sm-none d-xl-flex align-items-stretch"></div>
+
+
+
 
 			</div>
-			<div class="col-md-4">
-				<hr class="light mx-auto">
-				<h5>Symposium Chairmen</h5>
-				<hr class="light mx-auto">
-				<p>Prof.Nadeeshani Nanayakkara</p>
-				<p>+94 81 239 3574</p>
+		</div>
+		<!-- Theme gallery End -->
 
-			</div>
-			<div class="col-md-4">
-				<hr class="light mx-auto">
-				<h5>Symposium Secretary</h5>
-				<hr class="light mx-auto">
-				<p>Dr.Nadeesha Koralagedara</p>
-				<p>+94 81 239 4285</p>
+		<!-- Important dates Gallery starts-->
 
-			</div>
-			<div class="col-12">
-				<hr class="light-100">
-				<h5>&copy; www.pgis.lk</h5>
+
+		<div class="container-fluid">
+			<div class="px-lg-1">
+
+
+
+
+
+				<div class="row justify-content-center">
+
+					<!-- Heading -->
+					<div class="col-12 text-center text-dark p-3 mt-3">
+						<h1>Important Dates</h1>
+					</div>
+					<!-- Gallery item -->
+					<div class=" col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+						<div class="card bg-white rounded shadow-sm w-100">
+							<div class="card-header">Abstract Submission Deadline</div>
+							<div class="card-content">
+								<div class="card-body ">
+
+
+									<h4>05<sup>th</sup> April 2024</h4>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!-- Gallery item -->
+					<div class=" col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+						<div class="card bg-white rounded shadow-sm w-100">
+							<div class="card-header">Notification of Acceptance</div>
+							<div class="card-content">
+								<div class="card-body ">
+
+
+									<h4>01<sup>th</sup> June 2024</h4>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- Gallery item -->
+					<div class=" col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+						<div class="card bg-white rounded shadow-sm w-100">
+							<div class="card-header">Submission of Revised Abstracts</div>
+							<div class="card-content">
+								<div class="card-body ">
+
+
+									<h4>30<sup>th</sup> June 2024</h4>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+				</div>
 			</div>
 		</div>
-	</div>
-</footer>
+
+		<!-- Important dates Gallery ends-->
 
 
-  <script>
-    window.onload = function(){
-      var countdownDate = new Date("Apr 05,2024 00:00:00").getTime();
-      console.log(countdownDate);
-      var x = setInterval(function(){
-        var now = new Date().getTime();
-        var distance = countdownDate - now;
-  
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-        document.getElementById("days").innerHTML = days;
-        document.getElementById("hours").innerHTML = hours;
-        document.getElementById("minutes").innerHTML = minutes;
-        document.getElementById("seconds").innerHTML = seconds;
-  
-      },1000);
-  
-      
-    };
-  </script>
-    
+
+		<!--- Footer -->
+		<footer>
+			<div class="container-fluid padding ">
+				<div class="row text-center">
+					<div class="col-md-4">
+						<hr class="light mx-auto">
+						<h5>For More Details</h5>
+						<hr class="light mx-auto">
+						<p><a href="#">www.pgis.lk/symp</a></p>
+						<p>symp2024@gmail.com</p>
+
+					</div>
+					<div class="col-md-4">
+						<hr class="light mx-auto">
+						<h5>Symposium Chairmen</h5>
+						<hr class="light mx-auto">
+						<p>Prof.Nadeeshani Nanayakkara</p>
+						<p>+94 81 239 3574</p>
+
+					</div>
+					<div class="col-md-4">
+						<hr class="light mx-auto">
+						<h5>Symposium Secretary</h5>
+						<hr class="light mx-auto">
+						<p>Dr.Nadeesha Koralagedara</p>
+						<p>+94 81 239 4285</p>
+
+					</div>
+					<div class="col-12">
+						<hr class="light-100">
+						<h5>&copy; www.pgis.lk</h5>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		<script>
+			window.onload = function () {
+				var countdownDate = new Date("Apr 05,2024 00:00:00").getTime();
+				console.log(countdownDate);
+				var x = setInterval(function () {
+					var now = new Date().getTime();
+					var distance = countdownDate - now;
+
+					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+					document.getElementById("days").innerHTML = days;
+					document.getElementById("hours").innerHTML = hours;
+					document.getElementById("minutes").innerHTML = minutes;
+					document.getElementById("seconds").innerHTML = seconds;
+
+				}, 1000);
+
+
+			};
+		</script>
+
 </body>
+
 </html>
