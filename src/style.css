@@ -197,7 +197,9 @@ hr.light-100{
 }
 
 
-
+.card:hover {
+  transform: scale(1.05); /* Small zoom for cards.*/
+}
 
 
 
