@@ -223,6 +223,13 @@ hr.light-100{
   transform: scale(1.05); /* Small zoom for cards.*/
 }
 
+ /******************* Registration tab  start ******************* */
+
+ .fee-card{
+  max-width: 75vw;
+ }
+
+ /******************* Registration tab end ******************* */
 
 
 /*
