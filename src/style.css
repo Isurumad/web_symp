@@ -21,6 +21,8 @@ html, body{
   padding: 0;
   /* border-top: 1px solid #d5d5d5; */
   color: #d5d5d5;
+}
+
 .title-description{
   margin-top: 30px;
 }
@@ -28,7 +30,7 @@ html, body{
 
 /* ************style for navigation start *************/
 .nav-logo{
-  max-height: 60px;
+  max-height: 10vh;
   width: auto
 }
 
@@ -215,10 +217,5 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
-
-
-
-
 
 
