@@ -12,11 +12,15 @@ html, body{
   height: 100%;
   width: 100%;
   margin: 0;
-  
-
-  
   font-family: 'Poppins', sans-serif;
   color: #222;
+}
+
+.section-divider{
+  margin: 0;
+  padding: 0;
+  /* border-top: 1px solid #d5d5d5; */
+  color: #d5d5d5;
 }
 
 
@@ -105,7 +109,14 @@ html, body{
   }
 }
 
-
+@media (max-width: 410px) {
+  .full-name{
+    font-size: 1rem;
+    position: absolute;
+    width: 100%;
+    height: 75%;
+  }
+}
 
 
 /*----------- background with countdown end ----------- */
