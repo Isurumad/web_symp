@@ -21,6 +21,8 @@ html, body{
   padding: 0;
   /* border-top: 1px solid #d5d5d5; */
   color: #d5d5d5;
+.title-description{
+  margin-top: 30px;
 }
 
 
@@ -39,7 +41,8 @@ html, body{
 }
 
 .nav-link{
-  font-size: 1.1em !important;
+  font-size: 0.9em !important;
+  color: beige;
 }
 /* ************style for navigation end *************/
 
@@ -54,7 +57,7 @@ html, body{
 }
 
 .main-header{
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .title{
@@ -124,7 +127,7 @@ html, body{
 
 /* ************style for footer start *************/
 footer{
-  background-color: #3f3f3f;
+  background-color: #1b1a1a;
   color: #d5d5d5;
   padding-top: 2rem;
 }
@@ -138,6 +141,10 @@ hr.light {
 
 .footer a {
   color: #d5d5d5;
+}
+
+footer p{
+  font-size: 0.7em;
 }
 
 hr.light-100{
@@ -208,7 +215,6 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
 
 
 

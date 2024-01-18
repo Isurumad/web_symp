@@ -25,31 +25,34 @@
 
 
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" style="background-color: #4d637c !important;">
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" style="background-color: #06366d !important;">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">
-				<img src="/img/university-of-peradeniya-logo.png" class="nav-logo img-fluid">
+				<img src="..\img\university-of-peradeniya-logo.png" class="nav-logo img-fluid" >
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			<div class="collapse navbar-collapse justify-content-end " id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto"> 
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Home</a>
+						<a class="nav-link" href="#">HOME</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
+						<a class="nav-link" href="#">ABOUT</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Speakers</a>
+						<a class="nav-link" href="#">REGISTRATION</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">GuidLines</a>
+						<a class="nav-link" href="#">SPEAKERS</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Organizing Committee</a>
+						<a class="nav-link" href="#">GUIDLINES</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">ORGANIZING COMMITEE</a>
 					</li>
 				</ul>
 			</div>
@@ -58,14 +61,14 @@
 	</nav>
 
 	<!-- Background with countdown -->
-	<div class="background-with-image" style="background-image: url('../img/microplastic-in-see.png');">
+	<div class="background-with-image" style="background-image: url('../img/micro-plastic.jpg');">
 
 		<div class="title d-flex justify-content-center align-items-center">
 			<h1 class="main-header">SYMP 2024</h1>
 		</div>
 
 		<div class="full-name d-flex justify-content-center align-items-center text-center ">
-			<p class="">Symposium on Microplastics Pollution 2024</p>
+			<p class="title-description">Symposium on Microplastics Pollution 2024</p>
 		</div>
 
 		<div class="timer-disc d-flex justify-content-center align-items-center">
@@ -99,16 +102,12 @@
 	<!-- Theme gallery starts -->
 
 	<div class="container-fluid">
-
-
-		<div class="row justify-content-center" style="background-color: #4d637c !important;">
+		<div class="row justify-content-center" style="background-color: #06366d !important;">
 
 			<!-- Heading -->
 			<div class="col-12 text-center text-dark p-3 mt-5">
 				<h1>Themes</h1>
 			</div>
-
-
 
 			<!-- Placeholder-->
 			<div class="col-xl-1 col-lg-4 col-md-6 mb-4 d-sm-none d-xl-flex align-items-stretch"></div>
@@ -276,7 +275,7 @@
 			<div class="row text-center">
 				<div class="col-md-4">
 					<hr class="light mx-auto">
-					<h5>For More Details</h5>
+					<p>For More Details</p>
 					<hr class="light mx-auto">
 					<p><a href="#" class="text-decoration-none">www.pgis.lk/symp</a></p>
 					<p>symp2024@gmail.com</p>
@@ -284,7 +283,7 @@
 				</div>
 				<div class="col-md-4">
 					<hr class="light mx-auto">
-					<h5>Symposium Chairmen</h5>
+					<p>Symposium Chairmen</p>
 					<hr class="light mx-auto">
 					<p>Prof.Nadeeshani Nanayakkara</p>
 					<p>+94 81 239 3574</p>
@@ -292,7 +291,7 @@
 				</div>
 				<div class="col-md-4">
 					<hr class="light mx-auto">
-					<h5>Symposium Secretary</h5>
+					<p>Symposium Secretary</p>
 					<hr class="light mx-auto">
 					<p>Dr.Nadeesha Koralagedara</p>
 					<p>+94 81 239 4285</p>
@@ -300,7 +299,7 @@
 				</div>
 				<div class="col-12">
 					<hr class="light-100">
-					<h5>&copy; www.pgis.lk</h5>
+					<p>&copy; www.pgis.lk</p>
 				</div>
 			</div>
 		</div>
@@ -309,7 +308,7 @@
 
 	<script>
 		window.onload = function () {
-			var countdownDate = new Date("Apr 05,2024 00:00:00").getTime();
+			var countdownDate = new Date("Apr 05,2024 23:59:59").getTime();
 			console.log(countdownDate);
 			var x = setInterval(function () {
 				var now = new Date().getTime();
