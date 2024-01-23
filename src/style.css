@@ -68,6 +68,9 @@ html, body{
 
 .main-header{
   font-size: 5rem;
+  stroke: aliceblue;
+  stroke-opacity: inherit;
+  stroke-width: 1px;
 }
 
 .title{
