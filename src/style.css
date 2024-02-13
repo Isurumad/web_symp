@@ -258,3 +258,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
 */
 
 
+
+@media (max-width: 991px) {
+  .column-margin {
+    margin: 5px 5px;
+  }
+}
