@@ -19,6 +19,32 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 
 	<title>SYMP-2024</title>
+
+	<style>
+		@keyframes glowing {
+        0% {
+          background-color: #e91010;
+          box-shadow: 0 0 5px #e91010;
+        }
+        50% {
+          background-color: #ff0000;
+          box-shadow: 0 0 20px #ff0000;
+        }
+        100% {
+          background-color: #e91010;
+          box-shadow: 0 0 5px #e91010;
+        }
+      }
+      .carosal-msg {
+        animation: glowing 1300ms infinite;
+      }
+
+	  .timer{
+		margin-top: 10px;
+	  }
+
+
+	</style>
 </head>
 
 <body>
@@ -62,7 +88,6 @@
 
 	<!-- Background with countdown -->
 	<div class="background-with-image" style="background-image: url('img/micro-plastic.jpg');">
-
 		<div class="title d-flex justify-content-center align-items-center">
 			<h1 class="main-header">SYMP 2024</h1>
 		</div>
@@ -72,7 +97,7 @@
 		</div>
 
 		<div class="timer-disc d-flex justify-content-center align-items-center">
-			<p class="">Abstract Submission Deadline</p>
+			<p class="carosal-msg">Abstract Submission Deadline Is Extended</p>
 		</div>
 
 		<div class="timer d-flex justify-content-center align-items-center bor">
@@ -222,7 +247,7 @@
 							<div class="card-body ">
 
 
-								<h4>05<sup>th</sup> April 2024</h4>
+								<h4>30<sup>th</sup> April 2024</h4>
 							</div>
 						</div>
 
@@ -308,7 +333,7 @@
 
 	<script>
 		window.onload = function () {
-			var countdownDate = new Date("Apr 05,2024 23:59:59").getTime();
+			var countdownDate = new Date("Apr 30,2024 23:59:59").getTime();
 			console.log(countdownDate);
 			var x = setInterval(function () {
 				var now = new Date().getTime();

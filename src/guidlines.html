@@ -24,6 +24,24 @@
         body{
             background-color: #06366d !important;
         }
+
+		@keyframes glowing {
+        0% {
+          background-color: #e91010;
+          box-shadow: 0 0 5px #e91010;
+        }
+        50% {
+          background-color: #880808;
+          box-shadow: 0 0 20px #880808;
+        }
+        100% {
+          background-color: #e91010;
+          box-shadow: 0 0 5px #e91010;
+        }
+      }
+      #submit-btn {
+        animation: glowing 1300ms infinite;
+      }
 	</style>
 
 </head>
@@ -107,10 +125,10 @@
                 <h2>Submit your Abstract</h2>
             </div>
             <div class="container text-center ">
-                <a target="_blank" href="https://forms.gle/A8YwFUtkRvHe8vx8A" class="btn btn-primary btn-lg ">Submit</a>
+                <a target="_blank" href="https://forms.gle/A8YwFUtkRvHe8vx8A" class="btn btn-primary btn-lg " id="submit-btn">Submit - Deadline Extended</a>
             </div>
             <div class="container">
-                <p class="text-center text-danger">Deadline for abstract submission: 5<sup>th</sup> April, 2024</p>
+                <p class="text-center text-danger">Deadline for abstract submission: 30<sup>th</sup> April, 2024</p>
               </div>
             <br>
         </div>
