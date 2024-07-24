@@ -32,7 +32,7 @@
         }
         100% {
           background-color: #e91010;
-          box-shadow: 0 0 5px #e91010;
+          box-shadow: 0 0 0px #e91010;
         }
       }
       .carosal-msg {
@@ -47,7 +47,12 @@
 	  .timer-disc{
 		color: #050a53;
 	  }
-
+	  .text-msg{
+		font-size: 30px;
+	  }
+	  .postponed{
+		color: #ff0000;
+	  }
 	</style>
 </head>
 
@@ -104,10 +109,14 @@
 			<p class="carosal-msg">Abstract Submission Deadline Is Extended</p>
 		</div> -->
 		<div class="timer-disc d-flex justify-content-center align-items-center" >
-			<h1>2<sup>nd</sup> August 2024</h1>
+			<h1>20<sup>th</sup> September 2024</h1>
+			<!-- <h1 class="carosal-msg">POSTPONED</h1> -->
 		</div>
 
 		<div class="timer d-flex justify-content-center align-items-center bor">
+			<!-- <div class="text-msg">
+				Reschedule as soon as the trade union action is over..
+			</div> -->
 			<div class="text-center bor">
 				<p id="days">00</p>
 				<span class="timeVariable bor1">Days</span>
@@ -292,10 +301,8 @@
 					<div class="card bg-white rounded shadow-sm w-100">
 						<div class="card-header">Symposium Date</div>
 						<div class="card-content">
-							<div class="card-body ">
-
-
-								<h4>2<sup>nd</sup> August 2024</h4>
+							<div class="card-body">
+								<h4>20<sup>th</sup> September 2024</h4>
 							</div>
 						</div>
 
@@ -351,7 +358,7 @@
 
 	<script>
 		window.onload = function () {
-			var countdownDate = new Date("August 02,2024 23:59:59").getTime();
+			var countdownDate = new Date("September 20,2024 23:59:59").getTime();
 			console.log(countdownDate);
 			var x = setInterval(function () {
 				var now = new Date().getTime();
