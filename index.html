@@ -24,26 +24,26 @@
 		
 		@keyframes glowing {
         0% {
-          background-color: #e91010;
-          box-shadow: 0 0 5px #e91010;
+          color: #ffffff;
         }
         50% {
-          background-color: #ff0000;
-          box-shadow: 0 0 20px #ff0000;
+          color: #eb2b2b;
         }
         100% {
-          background-color: #e91010;
-          box-shadow: 0 0 0px #e91010;
+		  color: #a00707;
+          text-decoration-color: #050a53;
         }
       }
       .carosal-msg {
         animation: glowing 1300ms infinite;
 		padding-left: 5px;
 		padding-right: 5px;
+		margin-bottom: 10px;
+		padding-top: 100px;
       }
 
 	  .timer{
-		margin-top: 50px;
+		margin-top: 100px;
 	  }
 	  .timer-disc{
 		color: #050a53;
@@ -104,17 +104,20 @@
 					<li class="nav-item active">
 						<a class="nav-link" href="index.html">HOME</a>
 					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="src/programme.html">PROGRAMME</a>
+					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="src/Registration.html">REGISTRATION</a>
 					</li>
+					</li>
+						<a class="nav-link" href="src/technical.html">TECHNICAL PROGRAMME</a>
+					<li class="nav-item">
 					<li class="nav-item">
 						<a class="nav-link" href="src/speakers.html">SPEAKERS</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="src/guidlines.html">GUIDELINES</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="src/technical.html">TECHNICAL PROGRAMME</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="./src/committee.html">ORGANIZING COMMITTEE</a>
@@ -134,15 +137,21 @@
 		<div class="full-name d-flex justify-content-center align-items-center text-center ">
 			<p class="title-description">Symposium on Microplastics Pollution 2024</p>
 		</div>
-
 		<!-- <div class="timer-disc d-flex justify-content-center align-items-center">
 			<p class="carosal-msg">Abstract Submission Deadline Is Extended</p>
 		</div> -->
 		<div class="timer-disc d-flex justify-content-center align-items-center" >
-			<h1>19<sup>th</sup> September 2024</h1>
-			<!-- <h1 class="carosal-msg">POSTPONED</h1> -->
+			<div>
+				<h1>19<sup>th</sup> September 2024</h1> <br>
+				
+			</div>
+			
 		</div>
-
+		<div class="timer-disc d-flex justify-content-center align-items-center">
+			<div>
+				<h2 class="carosal-msg">CONFERENCE ROOM - POSTGRDUATE INSTITUTE OF SCIENCE</h2>
+			</div>
+		</div>
 		<div class="timer d-flex justify-content-center align-items-center bor">
 			<!-- <div class="text-msg">
 				Reschedule as soon as the trade union action is over..
@@ -164,8 +173,9 @@
 				<span class="timeVariable bor1">Seconds</span>
 			</div>
 		</div>
+		
 	</div>
-	 
+
 	<div class="sponser container-fluid">
 		<div class="col-12 text-center text-dark p-3 mt-5" style="color: #000000 !important;">
 			<h5 style="color: #dfd9d9 !important;">Sponsored By</h5>
@@ -402,7 +412,7 @@
 
 	<script>
 		window.onload = function () {
-			var countdownDate = new Date("September 19,2024 09:00:00").getTime();
+			var countdownDate = new Date("September 19,2024 08:00:00").getTime();
 			console.log(countdownDate);
 			var x = setInterval(function () {
 				var now = new Date().getTime();
