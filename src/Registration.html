@@ -21,7 +21,36 @@
 	<title>SYMP-2024</title>
 
     <style>
-        
+        .nav-item {
+    position: relative;
+    list-style: none;
+}
+.nav-item .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px 0;
+    min-width: 180px;
+    z-index: 1000;
+}
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu li {
+    list-style: none;
+}
+.dropdown-menu li a {
+    display: block;
+    padding: 8px 15px;
+    color: #333;
+    text-decoration: none;
+}
+.dropdown-menu li a:hover {
+    background: #f5f5f5;
+}
     </style>
 
 </head>
@@ -30,7 +59,7 @@
 
 
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" style="background-color: #06366d !important;">
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" style="background-color: #0a1d2c !important;">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">
 				<img src="..\img\university-of-peradeniya-logo.png" class="nav-logo img-fluid" >
@@ -38,41 +67,46 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto"> 
-					<li class="nav-item">
-						<a class="nav-link" href="../index.html">HOME</a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="./programme.html">PROGRAMME</a>
-					</li>
-
-					<li class="nav-item active">
-						<a class="nav-link " href="./Registration.html">REGISTRATION</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./technical.html">TECHNICAL PROGRAMME</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./proceeding.html">PROCEEDINGS BOOK</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./speakers.html">SPEAKERS</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./guidlines.html">GUIDELINES</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./committee.html">ORGANIZING COMMITTEE</a>
-					</li>
-				</ul>
-			</div>
+					<div class="collapse navbar-collapse" id="navbarResponsive">
+						<ul class="navbar-nav ml-auto"> 
+							<li class="nav-item active">
+								<a class="nav-link" href="../index.html">HOME</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link">PROCEEDINGS BOOKS ▾</a>
+								<ul class="dropdown-menu">
+									<li><a href="../resources/Proceedings Book SYMP 2024 Final 23 09 2024.pdf">SYMP 2024</a></li>
+									<li><a href="#">SYMP 2025</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link disabled" href="src/speakers.html">SPEAKERS</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./guidlines.html">GUIDELINES</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./Registration.html">REGISTRATION</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./committee.html">ORGANIZING COMMITTEE</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link disabled" href="src/programme.html">PROGRAMME</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link disabled" href="src/technical.html">TECHNICAL PROGRAMME</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+		
+			</nav>
 		</div>
 	</nav>
     <!-- Navigation End -->
 
-    <div class="container-fluid" style="background-color: #06366d !important;">
+    <div class="container-fluid" style="background-color: #0a1d2c !important;">
 
         <div class="container padding ">
         
@@ -102,15 +136,16 @@
               
 			<!-- <br> is for a empty space -->
 			<br> 
+		
 		</div>
 
     </div>
 	
-	<section class="pricing py-5" style="background-color: #06366d !important;">
+	<section class="pricing py-5" style="background-color: #0a1d2c !important;">
 		<div class="container" >
 		  <div class="row">
 			<!-- Free Tier -->
-			<div class="col-lg-4">
+			<!-- <div class="col-lg-4">
 				<div class="column-margin">
 			  <div class="card mb-5 mb-lg-0 h-100">
 				<div class="card-body">
@@ -120,39 +155,39 @@
 				  <hr>
 				  <div class="text-center">
 					<p class="card-text h4">UG,PG Student</p>
-					<p class="card-text h6 fw-bold ">Rs.1500/=</p>
+					<p class="card-text h6 fw-bold ">Rs.2000</p>
 					<hr>
 					<p class="card-text h4">Other</p>
-					<p class="card-text h6 fw-bold ">Rs.2500/=</p>
+					<p class="card-text h6 fw-bold ">Rs.3000</p>
 					<hr>
 				  </div>
 				  <div class="d-grid">
-					<!-- remove  disabled class to enable the button -->
+					remove  disabled class to enable the button 
 					<a href="https://ipg.pgis.lk/" class="btn btn-primary text-uppercase disabled">Pay Here</a><br>
 					<a href="https://forms.gle/q9zANqortqZ5SZUb6" class="btn btn-success text-uppercase disabled">Upload Receipt</a>
-					<!-- <div class="container">
+					<div class="container">
 						<p class="text-center text-danger">*Instructions will be added soon</p>
-					</div> -->
+					</div>
 				 </div>
 				</div>
 			  </div>
 			</div>
-			</div>
+			</div> -->
 			<!-- Plus Tier -->
-			<div class="col-lg-4">
+			<div class="col-lg-6">
 				<div class="column-margin">
 				<div class="card mb-5 mb-lg-0 h-100">
 				  <div class="card-body">
 		  
 					<h3 class="card-price text-center">Regular</h3>
-					<h5 class="card-title text-muted text-uppercase text-center">19<sup>th</sup> September,2024</h5>
+					<h5 class="card-title text-muted text-uppercase text-center">20<sup>th</sup> October,2025</h5>
 					<hr>
 					<div class="text-center">
 						<p class="card-text h4">Student</p>
-                        <p class="card-text h6 fw-bold ">Rs.2000/=</p>
+                        <p class="card-text h6 fw-bold ">Rs.2000</p>
                         <hr>
                         <p class="card-text h4">Other</p>
-                        <p class="card-text h6 fw-bold ">Rs.3000/=</p>
+                        <p class="card-text h6 fw-bold ">Rs.3000</p>
                         <hr>
 					</div>
 					<!-- <div class="d-grid">
@@ -164,12 +199,15 @@
 					</div> -->
 					<div class="d-grid">
 						<!-- remove  disabled class to enable the button -->
-						<a href="https://ipg.pgis.lk/" class="btn btn-primary text-uppercase">Pay Here</a><br>
-						<a href="https://forms.gle/q9zANqortqZ5SZUb6" class="btn btn-success text-uppercase">Upload Receipt</a>
+						<a href="https://ipg.pgis.lk/" class="btn btn-primary text-uppercase disabled">Pay Here</a><br>
+						<a href="https://forms.gle/q9zANqortqZ5SZUb6" class="btn btn-success text-uppercase disabled">Upload Receipt</a>
 						<!-- <div class="container">
 							<p class="text-center text-danger">*Instructions will be added soon</p>
 						</div> -->
 					 </div>
+					 <div class="container">
+						<p class="text-center text-danger">Payment Link will Available Soon</p>
+					</div>
 				  </div>
 				</div>
 				</div>
@@ -177,23 +215,20 @@
 
 
 			<!-- Pro Tier -->
-			<div class="col-lg-4">
+			<div class="col-lg-6">
 				<div class="column-margin">
 				<div class="card mb-5 mb-lg-0 h-100">
 				  <div class="card-body">
 		  
 					<h3 class="card-price text-center">International</h3>
-					<h5 class="card-title text-muted text-uppercase text-center">19<sup>th</sup> September,2024</h5>
+					<h5 class="card-title text-muted text-uppercase text-center">20<sup>th</sup> October,2025</h5>
 					<hr>
 					<div class="text-center">
-
-						<p class="card-text h4 fw-bold">50 USD</p>
-						<div class="cardHidden">
-                        <p class="card-text h6 fw-bold ">placeholder</p>
+						<p class="card-text h4">Student</p>
+                        <p class="card-text h6 fw-bold ">50 USD</p>
                         <hr>
-                        <p class="card-text h4">placeholder</p>
-                        <p class="card-text h6 fw-bold ">placeholder</p>
-					</div>
+                        <p class="card-text h4">Other</p>
+                        <p class="card-text h6 fw-bold ">100 USD</p>
                         <hr>
 					</div>
 					<!-- <div class="d-grid">
@@ -205,12 +240,15 @@
 					</div> -->
 					<div class="d-grid">
 						<!-- remove  disabled class to enable the button -->
-						<a href="https://ipg.pgis.lk/" class="btn btn-primary text-uppercase">Pay Here</a><br>
-						<a href="https://forms.gle/q9zANqortqZ5SZUb6" class="btn btn-success text-uppercase">Upload Receipt</a>
+						<a href="https://ipg.pgis.lk/" class="btn btn-primary text-uppercase disabled">Pay Here</a><br>
+						<a href="https://forms.gle/q9zANqortqZ5SZUb6" class="btn btn-success text-uppercase disabled">Upload Receipt</a>
 						<!-- <div class="container">
 							<p class="text-center text-danger">*Instructions will be added soon</p>
 						</div> -->
-					 </div>
+					 </div><div class="container">
+						<p class="text-center text-danger">Payment Link will Available Soon</p>
+					</div>
+
 				  </div>
 				</div>
 				</div>
@@ -241,15 +279,15 @@
 					<p>Symposium Chairperson</p>
 					<hr class="light mx-auto">
 					<p>Prof. Nadeeshani Nanayakkara</p>
-					<p>+94 81 239 3574</p>
+					<p>nadeen@eng.pdn.ac.lk / +94 81 239 3574</p>
 
 				</div>
 				<div class="col-md-4">
 					<hr class="light mx-auto">
 					<p>Symposium Secretary</p>
 					<hr class="light mx-auto">
-					<p>Dr. Nadeesha Koralegedara</p>
-					<p>+94 81 239 4285</p>
+					<p>Ms. Chathurika Munasinghe</p>
+					<p>chathurikam@sci.pdn.ac.lk / +94 714 000 445</p>
 
 				</div>
 				<div class="col-12">

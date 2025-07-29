@@ -21,7 +21,36 @@
 	<title>SYMP-2024</title>
 
 	<style>
-
+		.nav-item {
+    position: relative;
+    list-style: none;
+	}
+.nav-item .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px 0;
+    min-width: 180px;
+    z-index: 1000;
+}
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu li {
+    list-style: none;
+}
+.dropdown-menu li a {
+    display: block;
+    padding: 8px 15px;
+    color: #333;
+    text-decoration: none;
+}
+.dropdown-menu li a:hover {
+    background: #f5f5f5;
+}
 	</style>
 
 </head>
@@ -30,44 +59,49 @@
 
 
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" style="background-color: #06366d !important;">
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" style="background-color: #0a1d2c !important;">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">
-				<img src="..\img\university-of-peradeniya-logo.png" class="nav-logo img-fluid">
+				<img src="..\img\university-of-peradeniya-logo.png" class="nav-logo img-fluid" >
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
 			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="../index.html">HOME</a>
-					</li>
+				<ul class="navbar-nav ml-auto"> 
 					<li class="nav-item active">
-						<a class="nav-link" href="./programme.html">PROGRAMME</a>
+						<a class="nav-link" href="..\index.html">HOME</a>
 					</li>
-					<li class="nav-item active">
-						<a class="nav-link " href="./Registration.html">REGISTRATION</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./technical.html">TECHNICAL PROGRAMME</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./proceeding.html">PROCEEDINGS BOOK</a>
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link">PROCEEDINGS BOOKS ▾</a>
+						<ul class="dropdown-menu">
+							<li><a href="..\resources\Proceedings Book SYMP 2024 Final 23 09 2024.pdf">SYMP 2024</a></li>
+							<li><a href="#">SYMP 2025</a></li>
+						</ul>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="./speakers.html">SPEAKERS</a>
+						<a class="nav-link disabled" href="src/speakers.html">SPEAKERS</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="./guidlines.html">GUIDELINES</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" href="./Registration.html">REGISTRATION</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="./committee.html">ORGANIZING COMMITTEE</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link disabled" href="src/programme.html">PROGRAMME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="src/technical.html">TECHNICAL PROGRAMME</a>
 					</li>
 				</ul>
 			</div>
 		</div>
+
 	</nav>
 	<!-- Navigation End -->
 
@@ -92,7 +126,7 @@
 					</th>
 					<td>
 						<div class="my-2">
-							Prof. Sumedha Madawala (Editor-in-Chief)<br>
+							Prof. Rupika Rajakaruna (Editor-in-Chief)<br>
 							<!-- Prof. Sujeewa de Silva (University of Kelaniya)<br>
 							Dr. Shalika Kumburegama<br>
 							Dr. Dinushi Samarajeewa<br><br>
@@ -112,7 +146,7 @@
 					</th>
 					<td>
 						<div class="my-2">
-							Dr. Shalika Kumburegama <br>
+							Dr. Nadeesha Koralage <br>
 							<!-- Ms. Samanmalee (PGIS) <br>
 							Ms. Sakunthala (PGIS) -->
 	
@@ -122,17 +156,33 @@
 				</tr>
 				<tr>
 					<th scope="row" ><div class="mx-5 my-2">
-						Technical Committee
+						Technical &amp; Logistics Committee
 					</div>
 					
 					</th>
 					<td>
 						<div class="my-2">
-							Dr. Mahasen Dehideniya<br>
+							Dr. Nalaka Sumanarathne<br>
 							 <!-- Ms. Pavithra (web and CMT) <br>
 							  Mr. Asanka Amarasinghe (PGIS)<br>
 							   Mr. Mishantha Karunathilaka (ES 4th year)<br>
 							   Mr. Nevinda Abeysinghe (ES 4th year) -->
+						</div>
+					</td>
+	
+				</tr>
+				<tr>
+					<th scope="row" ><div class="mx-5 my-2">
+						Media &amp; Publicity Committee
+					</div>
+					
+					</th>
+					<td>
+						<div class="my-2">
+							Mr. Isuru Madugalla<br>
+							 <!-- Mr. Asanka Amarasinghe(PGIS)<br>
+							  Mr. Oshada Weerathunga (Certificates and flyers) -->
+	
 						</div>
 					</td>
 	
@@ -145,7 +195,7 @@
 					</th>
 					<td>
 						<div class="my-2">
-							Dr. Mr. Kumudu wijesooriya<br>
+							Mr. Kumudu Wijesooriya<br>
 							 <!-- Dr. Suranjith Gamaarachchige <br>
 							 Ms. Anuradha (PGIS) -->
 	
@@ -153,7 +203,7 @@
 					</td>
 	
 				</tr>
-				<tr>
+				<!-- <tr>
 					<th scope="row" ><div class="mx-5 my-2">
 						Logistics Committee
 					</div>
@@ -162,15 +212,15 @@
 					<td>
 						<div class="my-2">
 							Dr. Suranjith Gamaarachchige<br>
-							 <!-- Ms. Anuradha (PGIS)<br>
+							  Ms. Anuradha (PGIS)<br>
 							 Lakshitha<br>
 							  Mr. Punsara Dharaka<br>
 							   Dileepa <br>
-							   Kasun -->
+							   Kasun 
 						</div>
 					</td>
 	
-				</tr>
+				</tr> -->
 				<tr>
 					<th scope="row" ><div class="mx-5 my-2">
 						Ceremonial Committee
@@ -179,7 +229,7 @@
 					</th>
 					<td>
 						<div class="my-2">
-							Ms. Chathurika Munasinghe <br>
+							Dr. Sumudu Ruklani <br>
 							<!-- Ms.Sakunthala (PGIS) <br>
 							Minelle (3rd year) -->
 						</div>
@@ -188,13 +238,13 @@
 				</tr>
 				<tr>
 					<th scope="row" ><div class="mx-5 my-2">
-						Fundraising &amp; publicity Committee
+						Fundraising Commitee
 					</div>
 					
 					</th>
 					<td>
 						<div class="my-2">
-							Dr. Udayana Ranatunga <br>
+							Prof. Namal Priyantha <br>
 							<!-- Prof. Namal Priyantha<br>
 							 Prof. Sumedha Madawala <br>
 							 Prof. Nadeeshani Nanayakkara<br>
@@ -203,7 +253,7 @@
 					</td>
 	
 				</tr>
-				<tr>
+				<!-- <tr>
 					<th scope="row" ><div class="mx-5 my-2">
 						Pre-symposium Webinar series
 					</div>
@@ -215,23 +265,7 @@
 						</div>
 					</td>
 	
-				</tr>
-				<tr>
-					<th scope="row" ><div class="mx-5 my-2">
-						Media Committee
-					</div>
-					
-					</th>
-					<td>
-						<div class="my-2">
-							Dr. Malima Atapattu<br>
-							 <!-- Mr. Asanka Amarasinghe(PGIS)<br>
-							  Mr. Oshada Weerathunga (Certificates and flyers) -->
-	
-						</div>
-					</td>
-	
-				</tr>
+				</tr> -->
 	
 			</tbody>
 		</table>
@@ -260,16 +294,16 @@
 					<hr class="light mx-auto">
 					<p>Symposium Chairperson</p>
 					<hr class="light mx-auto">
-					<p>Prof.Nadeeshani Nanayakkara</p>
-					<p>+94 81 239 3574</p>
+					<p>Prof. Nadeeshani Nanayakkara</p>
+					<p>nadeen@eng.pdn.ac.lk / +94 81 239 3574</p>
 
 				</div>
 				<div class="col-md-4">
 					<hr class="light mx-auto">
 					<p>Symposium Secretary</p>
 					<hr class="light mx-auto">
-					<p>Dr.Nadeesha Koralegedara</p>
-					<p>+94 81 239 4285</p>
+					<p>Ms. Chathurika Munasinghe</p>
+					<p>chathurikam@sci.pdn.ac.lk / +94 714 000 445</p>
 
 				</div>
 				<div class="col-12">
